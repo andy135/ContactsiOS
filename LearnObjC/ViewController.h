@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EditViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *tablePeople;
+
+- (IBAction)addNewPerson:(id)sender;
 
 @end
 

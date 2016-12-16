@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A155BFCF1E02C413004F521B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BFCE1E02C413004F521B /* Person.m */; };
 		A18C4C091E027D3C00122B9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C4C081E027D3C00122B9D /* main.m */; };
 		A18C4C0C1E027D3C00122B9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C4C0B1E027D3C00122B9D /* AppDelegate.m */; };
 		A18C4C0F1E027D3C00122B9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C4C0E1E027D3C00122B9D /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		A18C4C141E027D3C00122B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18C4C131E027D3C00122B9D /* Assets.xcassets */; };
 		A18C4C171E027D3C00122B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18C4C151E027D3C00122B9D /* LaunchScreen.storyboard */; };
 		A18C4C221E027D3C00122B9D /* LearnObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C4C211E027D3C00122B9D /* LearnObjCTests.m */; };
+		A18C4C2E1E02981F00122B9D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A18C4C2D1E02981F00122B9D /* libsqlite3.tbd */; };
+		A18C4C361E02A83D00122B9D /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C4C351E02A83D00122B9D /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A155BFCD1E02C413004F521B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		A155BFCE1E02C413004F521B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
 		A18C4C041E027D3C00122B9D /* LearnObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18C4C081E027D3C00122B9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A18C4C0A1E027D3C00122B9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		A18C4C1D1E027D3C00122B9D /* LearnObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18C4C211E027D3C00122B9D /* LearnObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnObjCTests.m; sourceTree = "<group>"; };
 		A18C4C231E027D3C00122B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18C4C2D1E02981F00122B9D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A18C4C341E02A83D00122B9D /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		A18C4C351E02A83D00122B9D /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18C4C2E1E02981F00122B9D /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 				A18C4C061E027D3C00122B9D /* LearnObjC */,
 				A18C4C201E027D3C00122B9D /* LearnObjCTests */,
 				A18C4C051E027D3C00122B9D /* Products */,
+				A18C4C2C1E02981F00122B9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +91,15 @@
 		A18C4C061E027D3C00122B9D /* LearnObjC */ = {
 			isa = PBXGroup;
 			children = (
+				A155BFCD1E02C413004F521B /* Person.h */,
+				A155BFCE1E02C413004F521B /* Person.m */,
 				A18C4C0A1E027D3C00122B9D /* AppDelegate.h */,
 				A18C4C0B1E027D3C00122B9D /* AppDelegate.m */,
 				A18C4C0D1E027D3C00122B9D /* ViewController.h */,
 				A18C4C0E1E027D3C00122B9D /* ViewController.m */,
 				A18C4C101E027D3C00122B9D /* Main.storyboard */,
+				A18C4C341E02A83D00122B9D /* EditViewController.h */,
+				A18C4C351E02A83D00122B9D /* EditViewController.m */,
 				A18C4C131E027D3C00122B9D /* Assets.xcassets */,
 				A18C4C151E027D3C00122B9D /* LaunchScreen.storyboard */,
 				A18C4C181E027D3C00122B9D /* Info.plist */,
@@ -109,6 +123,14 @@
 				A18C4C231E027D3C00122B9D /* Info.plist */,
 			);
 			path = LearnObjCTests;
+			sourceTree = "<group>";
+		};
+		A18C4C2C1E02981F00122B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18C4C2D1E02981F00122B9D /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +237,9 @@
 			files = (
 				A18C4C0F1E027D3C00122B9D /* ViewController.m in Sources */,
 				A18C4C0C1E027D3C00122B9D /* AppDelegate.m in Sources */,
+				A155BFCF1E02C413004F521B /* Person.m in Sources */,
 				A18C4C091E027D3C00122B9D /* main.m in Sources */,
+				A18C4C361E02A83D00122B9D /* EditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +436,7 @@
 				A18C4C281E027D3C00122B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A18C4C291E027D3C00122B9D /* Build configuration list for PBXNativeTarget "LearnObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +445,7 @@
 				A18C4C2B1E027D3C00122B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
